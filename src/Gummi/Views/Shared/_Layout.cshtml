@@ -3,14 +3,19 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/css/Styles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div id="main">
-        @RenderBody()
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
     </div>
     <footer>
-        @Html.Partial("_Footer.cshtml")
+        <div class="content-wrapper">
+            @Html.Partial("_Footer.cshtml")
+        </div>
     </footer>
 </body>
 </html>
