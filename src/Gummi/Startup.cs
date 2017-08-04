@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Gummi.Models;
 
+
 namespace Gummi
 {
     public class Startup
@@ -36,6 +37,8 @@ namespace Gummi
        
         public void Configure(IApplicationBuilder app)
         {
+            app.UseStaticFiles();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -43,9 +46,16 @@ namespace Gummi
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            //loggerFactory.AddConsole();
+
+           // if (env.IsDevelopment())
+           // {
+           //     app.UseDeveloperExceptionPage();
+         //   }
+
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Loading...");
             });
         }
     }

@@ -17,7 +17,7 @@ namespace Gummi.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder Options)
         {
-            Options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=GummiBearKindgdom;integrated security=True");
+            Options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=GummiBearKingdom;integrated security=True");
         }
         public GummiDbContext(DbContextOptions<GummiDbContext> options)
             : base(options)
