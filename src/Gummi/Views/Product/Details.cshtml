@@ -5,6 +5,9 @@
 @model Gummi.Models.Product
 
 <h2>Product information:</h2>
+<ul>
 <li>@Html.DisplayFor(model => model.name)</li>
 <li>$ @Html.DisplayFor(model => model.price)</li>
 <li>Made in: @Html.DisplayFor(model => model.origin)</li>
+</ul>
+<p>@Html.ActionLink("Add new product", "Create")</p>

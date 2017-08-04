@@ -7,6 +7,11 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <header>
+        <div class="content-wrapper">
+            @Html.Partial("_Header.cshtml")
+        </div>
+    </header>
     <div id="body">
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()

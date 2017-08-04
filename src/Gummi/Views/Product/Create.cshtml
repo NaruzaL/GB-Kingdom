@@ -8,11 +8,19 @@
 <h2>Create</h2>
 <hr />
 <h4>Add a new product</h4>
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(model => model.name)
-    @Html.TextBoxFor(model => model.origin)
-    @Html.TextBoxFor(model => model.price)
-    <input type="submit" value="Add new product" />
-}
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<div id="create">
+    @using (Html.BeginForm())
+    {
+      <p>@Html.LabelFor(model => model.name)</p>  
+      <p>@Html.TextBoxFor(model => model.name)</p> 
+      
+      <p>@Html.LabelFor(model => model.price)</p>
+      <p>@Html.TextBoxFor(model => model.price)</p> 
+        
+      <p>@Html.LabelFor(model => model.origin)</p> 
+      <p>@Html.TextBoxFor(model => model.origin)</p> 
+
+        <input type="submit" value="Add new product" />
+    }
+</div>
+

@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "3.3.7",
+    "jQuery": "3.1.1",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",

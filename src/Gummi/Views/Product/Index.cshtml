@@ -7,13 +7,16 @@
 
 <h2>Gummi Products:</h2>
 <hr />
-<ul>
+<ul id="product">
     @foreach (var product in Model)
     {
-        <li>@Html.DisplayFor(modelProduct => product.name)</li>
-        <ul>
-            <li>@Html.ActionLink("Details", "Details", new { id = product.ProductId })</li>
-        </ul>
+        <div class="list">
+            <li>@Html.DisplayFor(modelProduct => product.name)</li>
+            <ul>
+                <li>@Html.ActionLink("Details", "Details", new { id = product.ProductId })</li>
+                <li>@Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</li>
+                <li>@Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) </li>
+            </ul>
+        </div>
     }
 </ul>
-<p>@Html.ActionLink("Add new product", "Create")</p>

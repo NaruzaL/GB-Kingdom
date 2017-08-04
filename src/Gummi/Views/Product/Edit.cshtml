@@ -12,15 +12,14 @@
 {
     @Html.HiddenFor(model => model.ProductId)
 
-    @Html.LabelFor(model => model.name)
-    @Html.EditorFor(model => model.name)
+    <p>@Html.LabelFor(model => model.name)</p> 
+    <p>@Html.EditorFor(model => model.name)</p>
 
-    @Html.LabelFor(model => model.price)
-    @Html.EditorFor(model => model.price)
+    <p>@Html.LabelFor(model => model.price)</p>
+    <p>@Html.EditorFor(model => model.price)</p>
 
-    @Html.LabelFor(model => model.origin)
-    @Html.EditorFor(model => model.origin)
+    <p>@Html.LabelFor(model => model.origin)</p>
+    <p>@Html.EditorFor(model => model.origin)</p> 
 
     <input type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Back to list", "Index")</p>
