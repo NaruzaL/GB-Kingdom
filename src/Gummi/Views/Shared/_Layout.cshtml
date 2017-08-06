@@ -3,22 +3,23 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <link href="~/css/Styles.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <header>
-        <div class="content-wrapper">
+        <div class="header">
             @Html.Partial("_Header.cshtml")
         </div>
     </header>
     <div id="body">
-        <section class="content-wrapper main-content clear-fix">
+        <section class="main">
             @RenderBody()
         </section>
     </div>
     <footer>
-        <div class="content-wrapper">
+        <div class="footer">
             @Html.Partial("_Footer.cshtml")
         </div>
     </footer>
